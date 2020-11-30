@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10px">
+
+    <TextView
+        android:id="@+id/textViewInstructorName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="5px"
+        android:text="TextView"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewCourseID"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="0.75"
+            android:gravity="center_vertical"
+            android:padding="5px"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnCriteria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:padding="5px"
+            android:text="Edit Course" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewCriteriaLabel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:padding="5px"
+            android:text="Grade"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewCriteriaValue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:padding="10px"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textViewWeightLabel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:padding="5px"
+            android:text="GPA"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewWeightageValue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:padding="10px"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewTotalMarksLabel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:padding="5px"
+            android:text="Instructor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewTotalMarksValue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:padding="10px"
+            android:text="TextView" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10px">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewCriteriaValue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="3dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewWeightageValue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="3dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTotalMarksValue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="3dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewMarksObtainedValue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="3dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewAcheivedPercentageValue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="3dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewGradeID"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0"
+            android:text="TextView"
+            tools:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

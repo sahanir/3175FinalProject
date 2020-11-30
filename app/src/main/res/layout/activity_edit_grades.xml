@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editGrades">
+
+    <TextView
+        android:id="@+id/textViewUpgradeCriteriaPercentage"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="left|center_vertical"
+        android:text="Criteria Percentage"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewUpgradeTotalMarksLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUpgradeTotalMarks"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUpgradeMarksObtained"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerUpgradeCriteria"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUpgradeCriteriaPercentage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUpgradeMarksObtained"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btnUpgradeGrade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewUpgradeTotalMarksLabel"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="left|center_vertical"
+        android:text="Total Marks "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewUpgradeMarksObtainedLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUpgradeCriteriaPercentage"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Example 5% = 5"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUpgradeTotalMarks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewUpgradeCriteriaLabel"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="left|center_vertical"
+        android:text="Select Criteria"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewUpgradeCriteriaPercentage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewUpgradeMarksObtainedLabel"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="left|center_vertical"
+        android:text="Marks Obtained"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnUpgradeGrade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnUpgradeGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="216dp"
+        android:text="Upgrade Grade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

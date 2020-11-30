@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editCourse">
+
+    <EditText
+        android:id="@+id/editTextTotalMarks"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/editTextMarksObtained"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextCriteriaPercentage"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Example 5% = 5"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTotalMarks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/listViewCriteria"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSaveCriteria"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Save Criteria"
+        app:layout_constraintBottom_toTopOf="@+id/listViewCriteria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSelectCriteriaLabel"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="left|center_vertical"
+        android:text="Select Criteria"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSelectCriteriaPercentage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextMarksObtained"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btnSaveCriteria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerCriteria"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCriteriaPercentage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewInstructorLabel"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="left|center_vertical"
+        android:text="Select Instructor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSelectCriteriaLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/spinnerInstructor"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerCriteria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewSelectMarksObtainedLabel"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="left|center_vertical"
+        android:text="Marks Obtained"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSaveCriteria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSelectTotalMarksLabel"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="left|center_vertical"
+        android:text="Total Marks "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSelectMarksObtainedLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSelectCriteriaPercentage"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="left|center_vertical"
+        android:text="Criteria Percentage"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSelectTotalMarksLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
